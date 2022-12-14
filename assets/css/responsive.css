@@ -1,0 +1,116 @@
+@media (width < 768px) {
+    .header__top-left{
+        display: none;
+    }
+    .header__top-search{
+        width: 60%;
+    }
+    .navbar__item:last-child{
+        display: none;
+    }
+    .slider{
+        height: 200px;
+    }
+    .product{
+        margin-top: 20px;
+    }
+    .product__title{
+        font-size: 28px;
+    }
+    .section{
+        height: 400px;
+    }
+    .section img{
+        height: 40%;
+        width: 100%;
+        animation: none;
+    }
+    .box{
+        animation: none;
+        width: 100%;
+        bottom: -50px;
+    }
+    .vts{
+        padding: 8% 5%;
+    }
+    .footer__head{
+        flex-direction: column;
+    }
+    .footer__block{
+        width: 100%;
+    }
+    .footer__value{
+        margin: 0;  
+    }
+    .product__single{
+        margin-top: 0;
+    }
+
+    .cart__row-header{
+        font-size: 16px;
+    }
+    .cart__info{
+        padding: 5px 5px 5px 0;
+    }
+    .cart__info-inner{
+        padding: 0;
+    }
+    .cart__info-inner .cart__info-del{
+        margin: auto;
+        font-size: 10px;
+    }
+    .cart__row-header th{
+        font-size: 12px;
+        padding: 0;
+    }
+    .cart__info img{
+        width: 50px;
+        height: 50px;
+    }
+    .cart__info-inner .cart__info-title{
+        font-size: 14px;
+    }
+    .cart__row td{
+        font-size: 10px;
+    }
+    .cart__amount{
+        width: 48px;
+        height: 16px;
+    }
+    .cart__amount input{
+        padding:0;
+    }
+    .cart__amount a{
+        width: 30px;
+        line-height: 14px;
+    }
+    .cart__footer span{
+        font-size: 14px;
+    }
+    .cart__buy-mobile{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .cart__buy-mobile a{
+        margin-top: 10px;
+    }
+    .form, .form__wrapper{
+        width: 100%;
+    }
+    .info h4{
+        margin-top: 40px;
+    }
+    .info_history table th{
+        font-size: 16px;
+    }
+    .info_history table td{
+        padding: 4px;
+        font-size: 14px;
+    }
+}
+@media (width< 1024px) {
+    #banner{
+        display: none;
+    }
+}

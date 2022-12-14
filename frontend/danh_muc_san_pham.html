@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Trang chủ</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="./assets/bootstrap-4.3.1-dist/css/bootstrap.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="./assets/fontawesome-free-6.2.0-web/css/all.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="./assets/animate.min.css_4.1.0/cdnjs/animate.min.css"
+        />
+        <link rel="stylesheet" href="./assets/css/trang_chu.css" />
+        <link rel="stylesheet" href="./assets/css/danh_muc_san_pham.css" />
+        <link rel="stylesheet" href="./assets/css/base.css" />
+    </head>
+
+    <body>
+        <div class="main">
+            <div class="container">
+                <div class="header">
+                    <div
+                        class="header__top animate__animated animate__slideInDown"
+                    >
+                        <div class="header__top-left">
+                            <div class="contact">
+                                <span>Địa chỉ</span>
+                                <p>Số 209 Xã Đàn, Nam Đồng, Đống Đa, Hà Nội</p>
+                            </div>
+                            <div class="contact">
+                                <span>HOTLINE</span>
+                                <p>086.780.2860</p>
+                            </div>
+                        </div>
+                        <div class="header__top-center">
+                            <img
+                                src="./assets/img/logo-mona.png"
+                                alt=""
+                                class="logo"
+                            />
+                        </div>
+                        <div class="header__top-right">
+                            <form
+                                action="./tim_kiem.php"
+                                method="post"
+                                class="header__top-search"
+                            >
+                                <input
+                                    type="text"
+                                    placeholder="Tìm kiếm..."
+                                    name="tim_kiem"
+                                />
+                                <button type="submit" name="submit">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </form>
+                            <div class="header__top-item">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                            <div class="header__top-item">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar">
+                        <div class="navbar__item">
+                            <a class="navbar__link" href="">Trang chủ</a>
+                        </div>
+                        <div class="navbar__item">
+                            <a class="navbar__link active" href=""
+                                >Sản phẩm
+                                <i class="fa-sharp fa-solid fa-angle-down"></i
+                            ></a>
+                            <ul class="menu__list">
+                                <li class="menu__item"><a href="">Nhẫn</a></li>
+                                <li class="menu__item">
+                                    <a href="">Dây chuyền</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="">Bông tai</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="navbar__item">
+                            <a class="navbar__link" href="">Tin tức</a>
+                        </div>
+                        <div class="navbar__item">
+                            <a class="navbar__link" href="">Giới thiệu</a>
+                        </div>
+                        <div class="navbar__item">
+                            <a class="navbar__link" href="">Liên hệ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner">
+                    <div class="banner__conatiner">
+                        <div class="banner__block">
+                            <img
+                                src="./assets/img/feature-1.jpg"
+                                alt=""
+                                class="banner__img"
+                            />
+                            <div class="banner__inner">
+                                <div class="banner__content">
+                                    <h2>THỜI TRANG 2022</h2>
+                                    <span>Giảm 50%</span>
+                                    <a href="" class="banner__btn-link"
+                                        >Xem ngay</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="banner__block">
+                            <img
+                                src="./assets/img/feature-2.jpg"
+                                alt=""
+                                class="banner__img"
+                            />
+                            <div class="banner__inner">
+                                <div class="banner__content">
+                                    <h2>THỜI TRANG NAM</h2>
+                                    <span>Giảm 20%</span>
+                                    <a href="" class="banner__btn-link"
+                                        >Xem ngay</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="banner__block">
+                            <img
+                                src="./assets/img/feature-4.jpg"
+                                alt=""
+                                class="banner__img"
+                            />
+                            <div class="banner__inner">
+                                <div class="banner__content">
+                                    <h2>TRANG SỨC NỮ</h2>
+                                    <span>Giảm 40%</span>
+                                    <a href="" class="banner__btn-link"
+                                        >Xem ngay</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="body row">
+                    <div class="category col-2">
+                        <div class="sidebar">
+                            <div class="sidebar__filter">
+                                <h3 class="sidebar__price-range">Khoảng giá</h3>
+                                <ul class="sidebar__filter-list">
+                                    <li class="sidebar__filter-item">
+                                        <input
+                                            type="checkbox"
+                                            name="all"
+                                            id="form-input"
+                                        />
+                                        <label for="form-input">Tất cả</label>
+                                    </li>
+                                    <li class="sidebar__filter-item">
+                                        <input type="checkbox" name="all" />
+                                        <label for="">Nhỏ hơn 3,000,000₫</label>
+                                    </li>
+                                    <li class="sidebar__filter-item">
+                                        <input type="checkbox" name="all" />
+                                        <label for=""
+                                            >Từ 3,000,000₫ - 5,000,000₫</label
+                                        >
+                                    </li>
+                                    <li class="sidebar__filter-item">
+                                        <input type="checkbox" name="all" />
+                                        <label for="">
+                                            Từ 5,000,000₫ - 7,000,000₫</label
+                                        >
+                                    </li>
+                                    <li class="sidebar__filter-item">
+                                        <input type="checkbox" name="all" />
+                                        <label for=""
+                                            >Từ 7,000,000₫ - 10,000,000₫</label
+                                        >
+                                    </li>
+                                    <li class="sidebar__filter-item">
+                                        <input type="checkbox" name="all" />
+                                        <label for="">
+                                            Từ 10,000,000₫ - 20,000,000₫</label
+                                        >
+                                    </li>
+                                    <li class="sidebar__filter-item">
+                                        <input type="checkbox" name="all" />
+                                        <label for="">
+                                            Lớn hơn 20,000,000₫</label
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sidebar__filter">
+                                <h3 class="sidebar__price-range">
+                                    Thương hiệu
+                                </h3>
+                                <ul class="sidebar__filter-list">
+                                    <li class="sidebar__filter-item">
+                                        <input type="checkbox" name="all" />
+                                        <label for="">Tất cả</label>
+                                    </li>
+                                    <li class="sidebar__filter-item">
+                                        <input type="checkbox" name="all" />
+                                        <label for="">Tất cả</label>
+                                    </li>
+                                    <li class="sidebar__filter-item">
+                                        <input type="checkbox" name="all" />
+                                        <label for="">Tất cả</label>
+                                    </li>
+                                    <li class="sidebar__filter-item">
+                                        <input type="checkbox" name="all" />
+                                        <label for="">Tất cả</label>
+                                    </li>
+                                    <li class="sidebar__filter-item">
+                                        <input type="checkbox" name="all" />
+                                        <label for="">Tất cả</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__body col-10">
+                        <div class="product__head">
+                            <h2 class="product__title">Trang sức nữ</h2>
+                            <div class="product__head-right">
+                                <label for="">Sắp xếp</label>
+                                <select name="" id="">
+                                    <option value="">
+                                        Giá từ thấp tới cao
+                                    </option>
+                                    <option value="">
+                                        Giá từ thấp tới cao
+                                    </option>
+                                    <option value="">
+                                        Giá từ thấp tới cao
+                                    </option>
+                                    <option value="">
+                                        Giá từ thấp tới cao
+                                    </option>
+                                    <option value="">
+                                        Giá từ thấp tới cao
+                                    </option>
+                                    <option value="">
+                                        Giá từ thấp tới cao
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="product__body-list row">
+                            <div class="product__body-item col-3">
+                                <img
+                                    src="./assets/img/day-chuyen-2.jpg"
+                                    alt=""
+                                />
+                                <div class="product__content-box">
+                                    <h3 class="title">
+                                        <a href=""
+                                            >Necklace with Initial Charm in Gold
+                                            Plating</a
+                                        >
+                                    </h3>
+                                    <div class="price">480.000d</div>
+                                    <button class="btn-cart">
+                                        Thêm giỏ hàng
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product__body-item col-3">
+                                <img
+                                    src="./assets/img/day-chuyen-2.jpg"
+                                    alt=""
+                                />
+                                <div class="product__content-box">
+                                    <h3 class="title">
+                                        <a href=""
+                                            >Necklace with Initial Charm in Gold
+                                            Plating</a
+                                        >
+                                    </h3>
+                                    <div class="price">480.000d</div>
+                                    <button class="btn-cart">
+                                        Thêm giỏ hàng
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product__body-item col-3">
+                                <img
+                                    src="./assets/img/day-chuyen-2.jpg"
+                                    alt=""
+                                />
+                                <div class="product__content-box">
+                                    <h3 class="title">
+                                        <a href=""
+                                            >Necklace with Initial Charm in Gold
+                                            Plating</a
+                                        >
+                                    </h3>
+                                    <div class="price">480.000d</div>
+                                    <button class="btn-cart">
+                                        Thêm giỏ hàng
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product__body-item col-3">
+                                <img
+                                    src="./assets/img/day-chuyen-2.jpg"
+                                    alt=""
+                                />
+                                <div class="product__content-box">
+                                    <h3 class="title">
+                                        <a href=""
+                                            >Necklace with Initial Charm in Gold
+                                            Plating</a
+                                        >
+                                    </h3>
+                                    <div class="price">480.000d</div>
+                                    <button class="btn-cart">
+                                        Thêm giỏ hàng
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product__body-item col-3">
+                                <img
+                                    src="./assets/img/day-chuyen-2.jpg"
+                                    alt=""
+                                />
+                                <div class="product__content-box">
+                                    <h3 class="title">
+                                        <a href=""
+                                            >Necklace with Initial Charm in Gold
+                                            Plating</a
+                                        >
+                                    </h3>
+                                    <div class="price">480.000d</div>
+                                    <button class="btn-cart">
+                                        Thêm giỏ hàng
+                                    </button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="page__list row">
+                            <a class="page__item-link" href=""
+                                ><i class="fa-solid fa-angle-left"></i
+                            ></a>
+                            <a class="page__item-link active" href="">1</a>
+                            <a class="page__item-link" href="">2</a>
+                            <a class="page__item-link" href="">3</a>
+                            <a class="page__item-link" href="">4</a>
+                            <a class="page__item-link" href="">...</a>
+                            <a class="page__item-link" href=""
+                                ><i class="fa-solid fa-angle-right"></i
+                            ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer-container">
+                    <div class="footer__head">
+                        <div class="footer__logo">
+                            <img
+                                src="./assets/img/logo-mona.png"
+                                alt=""
+                                style="max-width: 100px"
+                                class="footer__logo-img"
+                            />
+                        </div>
+                        <div class="footer__block">
+                            <div class="footer__block-icon">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <div class="footer__block__body">
+                                <span class="footer__name">Địa chỉ:</span>
+                                <p class="footer__value">
+                                    Cổ Nhuế - Bắc Từ Liêm - Hà Nội
+                                </p>
+                            </div>
+                        </div>
+                        <div class="footer__block">
+                            <div class="footer__block-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="footer__block__body">
+                                <span class="footer__name">Email:</span>
+                                <a
+                                    href="mailto:Haibh0903@gmail.com"
+                                    class="footer__value"
+                                    >Nguyentientuananh@gmail.com</a
+                                >
+                            </div>
+                        </div>
+                        <div class="footer__block">
+                            <div class="footer__block-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="footer__block__body">
+                                <span class="footer__name">Điện thoại:</span>
+                                <a href="tel:035 285 0379" class="footer__value"
+                                    >035 285 0379</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="payment">
+                <div class="payment__logo">
+                    <img
+                        src="./assets/img/payment-icon.png"
+                        style="max-width: 100%; max-height: 40px"
+                        alt=""
+                    />
+                </div>
+                <ul class="payment__list">
+                    <li class="payment__item">
+                        <a href="#" class="payment__item-link">Trang chủ</a>
+                    </li>
+                    <li class="payment__item">
+                        <a href="#" class="payment__item-link">giới thiệu</a>
+                    </li>
+                    <li class="payment__item">
+                        <a href="#" class="payment__item-link">sản phẩm</a>
+                    </li>
+                    <li class="payment__item">
+                        <a href="#" class="payment__item-link">tin tức </a>
+                    </li>
+                    <li class="payment__item" style="border-right: none">
+                        <a href="#" class="payment__item-link">liên hệ</a>
+                    </li>
+                </ul>
+                <div class="payment__license">
+                    © Bản quyền thuộc về Nguyentientuananh |
+                    <a
+                        href="https://www.facebook.com/Haibuihoang.09"
+                        class="NTTA"
+                        >NTTA</a
+                    >
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

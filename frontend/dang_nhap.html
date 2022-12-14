@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Trang chủ</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/bootstrap-4.3.1-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.2.0-web/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/animate.min.css_4.1.0/cdnjs/animate.min.css" />
+    <link rel="stylesheet" href="./assets/css/trang_chu.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="header">
+                <div class="header__top animate__animated animate__slideInDown">
+                    <div class="header__top-left">
+                        <div class="contact">
+                            <span>Địa chỉ</span>
+                            <p>Số 209 Xã Đàn, Nam Đồng, Đống Đa, Hà Nội</p>
+                        </div>
+                        <div class="contact">
+                            <span>HOTLINE</span>
+                            <p>086.780.2860</p>
+                        </div>
+                    </div>
+                    <div class="header__top-center">
+                        <img src="./assets/img/logo-mona.png" alt="" class="logo" />
+                    </div>
+                    <div class="header__top-right">
+                        <form action="./tim_kiem.php" method="post" class="header__top-search">
+                            <input type="text" placeholder="Tìm kiếm..." name="tim_kiem" />
+                            <button type="submit" name="submit">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </form>
+                        <div class="header__top-item">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <div class="header__top-item">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar">
+                    <div class="navbar__item">
+                        <a class="navbar__link" href="./trang_chu.php">Trang chủ</a>
+                    </div>
+                    <div class="navbar__item">
+                        <a class="navbar__link active" href="">Sản phẩm
+                            <i class="fa-sharp fa-solid fa-angle-down"></i></a>
+                        <ul class="menu__list">
+                            <li class="menu__item"><a href="">Nhẫn</a></li>
+                            <li class="menu__item">
+                                <a href="">Dây chuyền</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="">Bông tai</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navbar__item">
+                        <a class="navbar__link" href="">Tin tức</a>
+                    </div>
+                    <div class="navbar__item">
+                        <a class="navbar__link" href="">Giới thiệu</a>
+                    </div>
+                    <div class="navbar__item">
+                        <a class="navbar__link" href="">Liên hệ</a>
+                    </div>
+                </div>
+            </div>
+            <form action="" method="post" class="register">
+                <h2>Đăng Nhập</h2>
+                <div class="register__wrapper">
+                    <div class="form-control">
+                        <label for="">Email</label>
+                        <input class="form-input" type="email" name="email">
+                    </div>
+                    <div class="form-control">
+                        <label for="">Mật khẩu</label>
+                        <input class="form-input" type="password" name="mat_khau">
+                    </div>
+                </div>
+                <div class="register__btn">
+                    <input type="submit" name="submit"value="Đăng Nhập">
+                    <input type="reset" name="reset" value="Nhập lại">
+                </div>
+            </form>
+        </div>
+        <div class="footer">
+            <div class="footer-container">
+                <div class="footer__head">
+                    <div class="footer__logo">
+                        <img src="./assets/img/logo-mona.png" alt="" style="max-width: 100px" class="footer__logo-img" />
+                    </div>
+                    <div class="footer__block">
+                        <div class="footer__block-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="footer__block__body">
+                            <span class="footer__name">Địa chỉ:</span>
+                            <p class="footer__value">
+                                Cổ Nhuế - Bắc Từ Liêm - Hà Nội
+                            </p>
+                        </div>
+                    </div>
+                    <div class="footer__block">
+                        <div class="footer__block-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="footer__block__body">
+                            <span class="footer__name">Email:</span>
+                            <a href="mailto:Haibh0903@gmail.com" class="footer__value">Nguyentientuananh@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="footer__block">
+                        <div class="footer__block-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="footer__block__body">
+                            <span class="footer__name">Điện thoại:</span>
+                            <a href="tel:035 285 0379" class="footer__value">035 285 0379</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="payment">
+            <div class="payment__logo">
+                <img src="./assets/img/payment-icon.png" style="max-width: 100%; max-height: 40px" alt="" />
+            </div>
+            <ul class="payment__list">
+                <li class="payment__item">
+                    <a href="#" class="payment__item-link">Trang chủ</a>
+                </li>
+                <li class="payment__item">
+                    <a href="#" class="payment__item-link">giới thiệu</a>
+                </li>
+                <li class="payment__item">
+                    <a href="#" class="payment__item-link">sản phẩm</a>
+                </li>
+                <li class="payment__item">
+                    <a href="#" class="payment__item-link">tin tức </a>
+                </li>
+                <li class="payment__item" style="border-right: none">
+                    <a href="#" class="payment__item-link">liên hệ</a>
+                </li>
+            </ul>
+            <div class="payment__license">
+                © Bản quyền thuộc về Nguyentientuananh |
+                <a href="https://www.facebook.com/Haibuihoang.09" class="NTTA">NTTA</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
